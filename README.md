@@ -11,5 +11,5 @@ docker build -f src/main/docker/Dockerfile.jvm -t quarkus-server .
 ```shell
 docker create network quarkus-network
 docker run -d --name quarkus-client -p 8888:8888 --network quarkus-network quarkus-client
-docker run -d --name quarkus-client --network quarkus-network quarkus-client
+docker run -d --name quarkus-server --network quarkus-network quarkus-server
 ```
