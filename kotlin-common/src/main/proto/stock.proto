@@ -5,8 +5,6 @@ package com.trechina.proto;
 option java_package = "com.trechina.proto";
 option java_outer_classname = "StockProto";
 
-import "google/protobuf/timestamp.proto";
-
 service StockGrpcService {
   rpc FindByCode(Stock) returns (Stocks) {}
 }
@@ -14,13 +12,13 @@ service StockGrpcService {
 message Stock {
   int64 storeCode = 1;
   string productCode = 2;
-  google.protobuf.Timestamp stockDate = 3;
+  string stockDate = 3;
 }
 
 message StockResponse {
   int64 storeCode = 1;
   string productCode = 2;
-  google.protobuf.Timestamp stockDate = 3;
+  string stockDate = 3;
   double quantity = 4;
 }
 

@@ -63,11 +63,15 @@
         </dependency>
         <dependency>
             <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-resteasy-reactive-jackson</artifactId>
+            <artifactId>quarkus-resteasy-client-jackson</artifactId>
         </dependency>
         <dependency>
             <groupId>io.grpc</groupId>
             <artifactId>grpc-protobuf</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-rest-jackson</artifactId>
         </dependency>
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
